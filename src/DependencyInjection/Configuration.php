@@ -35,6 +35,7 @@ final class Configuration implements ConfigurationInterface
             ->children()
                 ->integerNode('min_length')->end()
                 ->integerNode('max_length')->end()
+                ->booleanNode('all_username')->end()
                 ->integerNode('invalid_attempts')
                     ->setDeprecated('The "%node%" option is not available since Contao 4.9 comes with improved brute-force-protection.')
                 ->end()

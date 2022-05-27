@@ -3,31 +3,31 @@
     <file datatype="php" original="src/Resources/contao/languages/en/exception.php" source-language="en">
         <body>
             <trans-unit id="XPT.passwordValidation.maxLength">
-                <source>Please use a maximum of %s characters.</source>
+                <source>Maksymalna długość hasła to %s znaków.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.minLength">
-                <source>Please use a minimum of %s characters.</source>
+                <source>Minimalna długość hasła to %s znaków.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.allowUName">
-                <source>Please do not use a username in password.</source>
+                <source>Użycie nazwy użytkownika w haśle nie jest dozwolone.</source>
             </trans-unit>
-            <trans-unit id="XPT.passwordValidation.passwordHistory">
-                <source>Please do not reuse any recent password but choose a new unique password.</source>
+            <trans-unit id="XPT.passwordValidatiPolityka haseł wymaga hasła o długość minimalnie %s znakówon.passwordHistory">
+                <source>Użycie ponownie hasła nie jest dozwolone.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.required.uppercase">
-                <source>Please use at least %u uppercase characters.</source>
+                <source>Wymagane jest użycie przynajmniej %u dużych liter w haśle.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.required.lowercase">
-                <source>Please use at least %u lowercase characters.</source>
+                <source>Wymagane jest użycie przynajmniej %u małych liter w haśle.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.required.numbers">
-                <source>Please use at least %u numbers.</source>
+                <source>Wymagane jest użycie przynajmniej %u cyfr w haśle.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.required.other">
-                <source>Please use at least %u characters out of the following: %s</source>
+                <source>Wymagane jest użycie przynajmniej %u znaków z %s.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidation.required.summary">
-                <source>Please use at least %u uppercase letters, %u lowercase letters, %u numbers and %u special characters: %s</source>
+                <source>Wymagane jest użycie przynajmnie %u dużych liter, %u małych liter, %u liczb i %u special znaków specjalnych: %s.</source>
             </trans-unit>
         </body>
     </file>

@@ -47,23 +47,31 @@ final class PasswordRegexpListener
         if ('terminal42_password_validation' !== $rgxp) {
             return false;
         }
-
         $dc = $widget->dataContainer;
+        $file = fopen('/var/www/html/web/testt.txt','w+');
+        fwrite($file,var_export($dc->activeRecord,true));
+        fclose($file);
         if ($dc instanceof ModulePersonalData) {
             $userId     = (int) FrontendUser::getInstance()->id;
+            $userName =  $dc->activeRecord->__get('username');
             $userEntity = FrontendUser::class;
         } elseif ($dc instanceof ModuleRegistration) {
             $userId     = null;
+            $userName =  $dc->activeRecord->__get('username');
             $userEntity = FrontendUser::class;
         } elseif ('FE' === TL_MODE && FE_USER_LOGGED_IN) {
             $userId     = (int) FrontendUser::getInstance()->id;
+            $userName   = $dc->activeRecord->__get('username');
             $userEntity = FrontendUser::class;
         } elseif (null !== $dc) {
             if ('tl_member' === $dc->table) {
                 $userId     = (int) $dc->id;
+                $userName   = $dc->activeRecord->__get('username');
                 $userEntity = FrontendUser::class;
             } elseif ('tl_user' === $dc->table) {
+                
                 $userId     = (int) $dc->id;
+                $userName   = $dc->activeRecord->__get('username');
                 $userEntity = BackendUser::class;
             } else {
                 return true;
@@ -77,7 +85,7 @@ final class PasswordRegexpListener
         }
 
         $password = new HiddenString($input);
-        $context  = new ValidationContext($userEntity, $userId, $password);
+        $context  = new ValidationContext($userEntity, $userId, $password, $userName);
         foreach ($this->validatorManager->getValidatorNames() as $validatorName) {
             if (null !== $validator = $this->validatorManager->getValidator($validatorName)) {
                 try {

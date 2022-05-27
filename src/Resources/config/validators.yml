@@ -20,6 +20,13 @@ services:
     arguments:
       ['@terminal42_password_validation.validator_configuration']
 
+  terminal42_password_validation.validator.allow_username:
+    class: Terminal42\PasswordValidationBundle\Validation\Validator\AllowUsername
+    tags:
+      - { name: terminal42_password_validation.validator, alias: allow_username }
+    arguments:
+      ['@terminal42_password_validation.validator_configuration']
+
   terminal42_password_validation.validator.required_characters:
     class: Terminal42\PasswordValidationBundle\Validation\Validator\RequiredCharacters
     tags:

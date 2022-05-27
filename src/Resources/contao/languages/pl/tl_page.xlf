@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/tl_page.php" source-language="en">
+        <body>
+            <trans-unit id="tl_page.pwChangeLegend">
+                <source>Zmiana hasła</source>
+            </trans-unit>
+            <trans-unit id="tl_page.pwChangePage.0">
+                <source>Strona zmiany hasła</source>
+            </trans-unit>
+            <trans-unit id="tl_page.pwChangePage.1">
+                <source>Przekieruj na tą stronę aby wymusić zmianę chasła.</source>
+            </trans-unit>
+            <trans-unit id="tl_page.nc_account_disabled.0">
+                <source>Powiadomienie o zawieszeniu konta</source>
+            </trans-unit>
+            <trans-unit id="tl_page.nc_account_disabled.1">
+                <source>Wybierz powiadomienie, które ma być widoczne, gdy konto członkowskie zostanie zawieszone.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

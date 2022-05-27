@@ -24,11 +24,13 @@ final class ValidationContext
 {
     private $userEntity;
     private $userId;
+    private $userName;
     private $password;
 
-    public function __construct(string $userEntity, ?int $userId, HiddenString $password)
+    public function __construct(string $userEntity, ?int $userId, HiddenString $password, $userName='elomelo')
     {
         $this->userId     = $userId;
+        $this->userName = $userName;
         $this->password   = $password;
         $this->userEntity = $userEntity;
     }
@@ -46,6 +48,11 @@ final class ValidationContext
     public function getUserId(): ?int
     {
         return $this->userId;
+    }
+
+    public function getUsername(): string
+    {
+        return $this->userName;
     }
 
     public function getPassword(): HiddenString
