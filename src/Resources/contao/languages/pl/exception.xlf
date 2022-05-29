@@ -8,7 +8,7 @@
             <trans-unit id="XPT.passwordValidation.minLength">
                 <source>Minimalna długość hasła to %s znaków.</source>
             </trans-unit>
-            <trans-unit id="XPT.passwordValidation.allowUName">
+            <trans-unit id="XPT.passwordValidation.allowUsername">
                 <source>Użycie nazwy użytkownika w haśle nie jest dozwolone.</source>
             </trans-unit>
             <trans-unit id="XPT.passwordValidatiPolityka haseł wymaga hasła o długość minimalnie %s znakówon.passwordHistory">

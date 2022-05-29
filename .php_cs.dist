@@ -50,6 +50,6 @@ return PhpCsFixer\Config::create()
         'strict_param' => true,
     ])
     ->setFinder(PhpCsFixer\Finder::create()->in([__DIR__.'/src']))
-    ->setRiskyAllowed(true)
+    ->setRiskyallowed(true)
     ->setUsingCache(false)
 ;
